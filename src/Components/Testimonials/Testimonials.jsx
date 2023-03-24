@@ -4,7 +4,9 @@ import Profile1 from '../../img/profilepics/profile1.jpg'
 import Profile2 from '../../img/profilepics/profile2.jpg'
 import Profile3 from '../../img/profilepics/profile3.jpg'
 import Profile4 from '../../img/profilepics/profile4.jpg'
-
+import { Pagination } from 'swiper';
+import 'swiper/css/pagination'
+import 'swiper/css'
 
 
 
@@ -43,13 +45,21 @@ const Testimonial = () => {
             </div>
 
                     {/* slide */}
-                    <Swiper>
+                    <Swiper
+                    modules={[Pagination]}
+                    slidesPerView={1}
+                    pagination={{clickable: true}}
+                    >
 
                     {clients.map((client, index) => {
-                        return(<SwiperSlide key={index}>
+                        return(
+                        <SwiperSlide key={index}>
+                            <div className="testimonial">
                             <img src={client.img} alt=""/>
                             <span>{client.review}</span>
-                        </SwiperSlide>)
+                            </div>
+                        </SwiperSlide>
+                        )
                     })}
 
                     </Swiper>
