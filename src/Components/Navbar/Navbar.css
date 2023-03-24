@@ -33,6 +33,8 @@
   gap: 2rem;
   margin-right: 4rem;
   list-style-type: none;
+  cursor: pointer;
+
 }
 
 .n-list > ul > li:hover {
@@ -44,8 +46,12 @@
   flex: 2;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 580px) {
   .n-list {
+    display: none;
+  }
+
+  .n-button{
     display: none;
   }
 }
