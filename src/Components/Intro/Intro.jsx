@@ -29,7 +29,7 @@ const Intro = () => {
             <div className="i-left">
                 <div className="i-name">
                 <span style={{ color: darkMode ? "white" : "" }}>Hy! I Am</span>
-                    <span>Andrew Thomas</span>
+                    <span>Ifechi Eze</span>
                     <span>Frontend Developer with high level
                          of experience in web designing and 
                          development, producing high quality 

@@ -17,7 +17,26 @@ const Portfolio = () => {
 
                     {/* slider */}
                 <Swiper 
-                spaceBetween={30} 
+                breakpoints={{
+                    350: {
+                        width: 350,
+                        slidesPerView: 1,
+                        
+                    },
+                    950:{
+                        width: 950,
+                        slidesPerView: 3,
+                    },
+                    1150:{
+                        width: 1150,
+                        slidesPerView: 4,
+                    },
+                    1350:{
+                        width: 1350,
+                        slidesPerView: 4,
+                    },
+                }}
+                spaceBetween={40} 
                 slidesPerView={3} 
                 grabCursor={true}
                 className='portfolio-slider'
