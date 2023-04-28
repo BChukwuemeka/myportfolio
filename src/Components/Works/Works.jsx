@@ -7,6 +7,7 @@ import Facebook from '../../img/facebook.png'
 import { useContext } from 'react'
 import {ThemeContext} from '../../Context'
 import { motion } from 'framer-motion'
+import { Link } from 'react-router-dom'
 
 
 
@@ -23,20 +24,20 @@ const Works = () => {
                 <span style={{ color: darkMode ? "white" : "" }}>
                 </span>
                 <span>Brands & Clients</span>
-                <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                     Dolorum veniam accusamus 
-                     <br/> eum incidunt itaque 
-                     assumenda consequuntur necessitatibus consectetur?
-                     <br/> eum incidunt itaque 
-                     assumenda consequuntur necessitatibus consectetur?
-                     <br/> eum incidunt itaque 
-                     assumenda consequuntur necessitatibus consectetur?
+                <span>Boxtel Logistics Abuja
+                     <br/> Merchandising Frontiers LTD Lagos.
+                     <br/> Interstreet Messenger Lagos.
+                     <br/> SmartHomes Nigeria LTd Abuja.
+                     <br/> CooperateFoot Nigeria LTd Abuja.
+                     <br/> Pool of redemption Assemblies Nyanya.
                 </span>
 
-
+                <Link to="/contact">
+                    
                         <button className="button s-button">
-                            Hire me
+                            Contact me
                         </button>
+                    </Link>
 
 
                      <div className="blur s-blur">

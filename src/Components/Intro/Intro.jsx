@@ -12,6 +12,7 @@ import FloatingDiv from '../FloatingDiv/FloatingDiv'
 import { motion } from 'framer-motion'
 import { useContext } from 'react'
 import { ThemeContext } from '../../Context'
+import { Link } from 'react-router-dom'
 
 
 
@@ -25,6 +26,10 @@ const Intro = () => {
 
 
     return ( 
+
+            
+
+
         <div className="intro">
             <div className="i-left">
                 <div className="i-name">
@@ -33,12 +38,26 @@ const Intro = () => {
                     <span>Frontend Developer with high level
                          of experience in web designing and 
                          development, producing high quality 
-                         work</span>
-                    <button className="button i-button">Hire me</button>
-                <div className="i-icons">
-                    <img src={Github} alt="" />
-                    <img src={Linkedin} alt="" />
-                    <img src={Instagram} alt="" />
+                        work</span>
+                    
+                    <Link to="contact" spy={true} smooth={true}>
+                        <button className="button i-button">Hire me</button>
+                        
+                    </Link>
+
+
+                    <div className="i-icons">
+                        <Link to='https://BChukwuemeka.github.io'>
+                            <img src={Github} alt="" />
+                        </Link>
+
+                        <Link to='https://www.linkedin.com/in/chukwuemeka-chukwuemeka'>
+                            <img src={Linkedin} alt="" />
+                        </Link>  
+                        
+                        <Link to='https://instagram.com/brichandbez_onlinemall'>
+                            <img src={Instagram} alt="" />
+                        </Link>
                 </div>
                 </div>
 

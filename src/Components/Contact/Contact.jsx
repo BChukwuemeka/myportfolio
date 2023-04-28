@@ -9,14 +9,14 @@ import { useState } from 'react';
 
 const Contact = () => {
 
-        const form = useRef();
+        const form = useRef(null);
 
         const [done, setDone] = useState(false)
       
         const sendEmail = (e) => {
           e.preventDefault();
       
-          emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, 'YOUR_PUBLIC_KEY')
+          emailjs.sendForm('service_9ch8ws7', 'template_3yfuna6', form.current, '3ESf2R1AzBgZUiyR9')
             .then((result) => {
                 console.log(result.text);
                 setDone(true);
@@ -38,6 +38,7 @@ const Contact = () => {
             <div className="c-right">
                 <form action="" ref={form} onSubmit={sendEmail} >
                 <input type="text" name="user-name" className="user" placeholder="Name" />
+                <input type="number" name="user-number" className="user" placeholder="Phone No" />
                 <input type="email" name="user-email" className="user" placeholder="Email" />
                 <textarea name="message" id="" cols="30" rows="10" className="user" placeholder="Message"/>
                 <input type="submit" value="send" className="button" />

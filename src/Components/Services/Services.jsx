@@ -33,10 +33,13 @@ const Services = () => {
             <div className="awesome">
                 <span style={{ color: darkMode ? "white" : "" }}>My Awesome</span>
                 <span>services</span>
-                <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                     Dolorum veniam accusamus <br/> eum incidunt itaque 
-                     assumenda consequuntur necessitatibus consectetur?
-                     </span>
+                <span className='redText'>Things I enjoy designing </span>
+                <span>UX, UI, Web, Apps, Logo</span>
+                <span className='redText'> Languages I Speak </span>
+                <span>HTML, CSS, JavaScript
+                </span><span>Some Frameworks/Libraries in my shed</span>
+                <span> , React, Node.js, Express, MongoDb
+                </span>
 
                      <a href={Resume} download>
 
@@ -53,11 +56,11 @@ const Services = () => {
             
             {/* right side */}
             <div className="cards">
-            <motion.div
-          initial={{ left: "25rem" }}
-          whileInView={{ left: "14rem" }}
-          transition={transition}
-        >
+                <motion.div
+                initial={{ left: "5rem" }}
+                whileInView={{ left: "10rem" }}
+                transition={transition}
+                >
                     <Card 
                     emoji = {HeartEmoji}
                     heading = {"Design"}
@@ -73,7 +76,7 @@ const Services = () => {
                     <Card 
                     emoji = {Glasses}
                     heading = {"Developer"}
-                    detail = {"Html, Css, JavaScript, React, vue.js, Babel, johnsons"}
+                    detail = {"Html, Css, JavaScript, React, vue.js,"}
                     />
                 </motion.div>
 
@@ -85,7 +88,7 @@ const Services = () => {
                     <Card 
                     emoji = {Humble}
                     heading = {"UI/UX"}
-                    detail = {"Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, velit minus!"}
+                    detail = {"I like to code things from scratch, and enjoy bringing ideas to life in the browser"}
                     />
                 </motion.div>
 
