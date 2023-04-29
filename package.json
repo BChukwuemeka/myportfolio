@@ -1,6 +1,6 @@
 {
-  "homepage": "http://BChukwuemeka.github.io/portfolio-starter-master/",
-  "name": "starter",
+  "homepage": "http://BChukwuemeka.github.io/myPortfolio/",
+  "name": "myPortfolio",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
